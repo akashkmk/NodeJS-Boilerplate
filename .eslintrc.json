@@ -10,6 +10,7 @@
   },
   "rules": {
     "no-console": "off",
-    "import/no-extraneous-dependencies": "off"
+    "implicit-arrow-linebreak": "off",
+    "arrow-body-style": "off"
   }
 }
