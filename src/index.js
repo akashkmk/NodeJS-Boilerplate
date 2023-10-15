@@ -1,10 +1,9 @@
-import redis from 'redis';
-import sum, { multiplication } from './sum';
+import express from 'express';
 
-console.log(sum(10, 5));
-console.log(multiplication(10, 5));
-console.log({ redis });
+const app = express();
+app.get('/', async (req, res) => res.send('Hello express'));
 
-const value = 10;
-const temp = value * 2;
-console.log(temp);
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Server is listening on port :${port}`);
+});
